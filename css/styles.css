@@ -1,0 +1,318 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../images/main-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+/* ****************          NAVBAR STYLES         ********************** */
+.navbar-toggler-icon{
+    border-color:#004C56;
+}
+
+.nav-logo{
+    padding-inline-end: 15px;
+}
+
+.kerrific{
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F48319;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.smarts{
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: #004C56;
+
+    
+}
+.nav-item{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: #004C56;     
+    margin-inline-start: 25px;
+}
+
+.nav-item:hover{
+    color: #F48319;
+}
+
+.navbar{
+    background-image: url(../images/tech-bg.jpg);
+    box-shadow: #f7f5f5;
+}
+
+/* container */
+.content{
+    padding-top: 70px;
+}
+/* ================================     GENERAL STYLES      ================================ */
+.section-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #F48319;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.section-hr{
+    width: 70px;
+    border: 2px solid #004C56;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.gray-container{
+    background-color: #fdfafa;
+    position: relative;
+}
+
+.white-container{
+    background-color:#FFFFFF;
+}
+
+/* ================================         HOME STYLES        ================================ */
+.home-content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.we-create{
+    padding-top: 80px;
+    font-size: 100px;
+    font-weight: bold;
+    color: #F48319;
+}
+
+hr{
+    width: 180px;
+    border: 10px solid #004C56;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+p,.ideas-tagline{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #F48319;
+}
+
+.ideas-tagline{
+    font-weight: bold;
+}
+
+.home-container{
+    background: none;
+}
+/* ================================     ABOUT STYLES        ================================ */
+.description{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #004C56;
+    margin: auto;
+}
+
+.mission-title{
+    font-size:  25px;
+    font-weight: 400;
+    color: #F48319;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.innovative-modern{
+    text-decoration: underline;
+}
+
+.about-mission{
+    /* padding-left: 80px; */
+}
+
+/* ================================         SERVICES STYLES        ================================ */
+
+
+.service-card {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 30px 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    height: 270px;
+  }
+
+.service-card:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #F48319;
+    left: 0;
+    top: 0;
+    content: "";
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  .service-card:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #F48319;
+    right: 0;
+    bottom: 0;
+    content: "";
+    -webkit-transition: .3s;
+    transition: .3s
+  }
+  
+  .service-card:hover:after,
+  .service-card:hover:before {
+    width: 50%;
+    height: 2px;
+    -webkit-transition: .3s;
+    transition: .3s
+  }
+  
+  .service-card:hover {
+    box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+  }
+  
+  .service-card i.fa {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    line-height: 60px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    transition: .3s
+  }
+  
+  .service-card:hover i.fa {
+    background-color: #F48319;
+    color: #fff;
+    border-color: #F48319;
+    border-radius: 0;
+  }
+  
+  .service-card h4 {
+    font-size: 25px;
+    font-weight: 500;    
+    color: #F48319;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .service-card p {
+    font-size: 18px;
+    color: #004C56;
+    line-height: 1.8;
+  }
+
+/* ================================         TEAM STYLES        ================================ */
+
+.team-container{
+    background-color: #F48319;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.team-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #004C56;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.profile-card{
+    background-color: #ffffff;
+    width: 390px;
+    height: 480px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 30px auto;
+}
+
+.profile-pic{
+    background-color: #f0eaea;
+    width: 200px;
+    height: 200px;
+    /* margin: 0px auto; */
+    margin: 5px auto;
+    margin-bottom: 50px;
+    border-radius: 100px;
+}
+
+.profile-container{
+    margin: auto;
+}
+
+.profile-name{
+    color: #004C56;
+    font-size: 35px;
+
+}
+
+.profile-position{
+    color: #004C56;
+    font-size: 17px;
+}
+
+.profile-description{
+    font-size: 18px;
+    font-weight: 400;
+    margin: auto 10px;
+}
+
+
+/* ================================         CONTACT STYLES        ================================ */
+
+.contact-info{
+    font-size: 18px;
+    color: #004C56;
+}
+
+
+/* ================================         FOOTER STYLES        ================================ */
+.footer-cont{
+    background-color: #004C56;
+}
+
+.footer-text{
+    font-size: 20px;
+    font-weight: 400;
+    color:#ffffff;
+}
+
+.social-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.icons{
+    color: #ffffff;
+}
