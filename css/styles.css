@@ -63,7 +63,6 @@ body{
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     height: 55px;
-    /* transition: .3s ease-in; */
 }
 
 .navigation{
@@ -265,6 +264,46 @@ p,.ideas-tagline{
     line-height: 1.8;
   }
 
+/* for service card animation */
+/* .service-card::after{
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+} */
+/* The fast way */
+
+.make-it-fast {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Pre-render the bigger shadow, but hide it */
+  
+.make-it-fast::after {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  
+/* Transition to showing the bigger shadow on hover */
+
+.make-it-fast:hover::after {
+    opacity: 1;
+  }
+  
+  /* Scale up the box */
+.service-card:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+.service-card:hover::after {
+    opacity: 1;
+  }
+
 /* ================================         TEAM STYLES        ================================ */
 
 .team-container{
@@ -288,8 +327,48 @@ p,.ideas-tagline{
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 30px auto;
+    /* for box shadow animation */
+    box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in-out;
 }
+.profile-card::after{
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+/* The fast way */
 
+.make-it-fast {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Pre-render the bigger shadow, but hide it */
+  
+.make-it-fast::after {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  
+/* Transition to showing the bigger shadow on hover */
+
+.make-it-fast:hover::after {
+    opacity: 1;
+  }
+  
+  /* Scale up the box */
+.profile-card:hover {
+    cursor: pointer;
+    transform: scale(1.08, 1.08);
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+.profile-card:hover::after {
+    opacity: 1;
+  }
 .profile-pic{
     background-color: #f0eaea;
     width: 200px;
@@ -355,11 +434,33 @@ p,.ideas-tagline{
 
 
 /* media queries */
+@media (min-width: 200px) {
+    .we-create{
+        font-size: 50px;
+    }
+    
+} 
+@media (min-width: 300px) {
+    .we-create{
+        font-size: 70px;
+    }
+}
 @media (min-width: 576px) {
-
+    .we-create{
+        font-size: 70px;
+    }
 }
 
-@media (min-width: 768px) {}
+@media (max-width: 991px) {
+    .collapse, nav {
+        background-color: #FFFFFF;
+        box-shadow: none !important;
+        width: 100%;
+    }
+    .nav-item{
+        margin: 1px auto !important;
+    }
+}
 
 @media (min-width: 992px) {
     .about-image{
