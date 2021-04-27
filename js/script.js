@@ -39,12 +39,14 @@ function validateForm() {
           .then((response) => {
               if(response.data.sent){
                   document.querySelector('.status').innerHTML = "Email sent.";
+                  document.querySelector('.status').style.color = 'green'
                   document.getElementById('message').value = "";
                   document.getElementById('email').value = "";
                   document.getElementById('name').value = "";
                  }
                  else{
                   document.querySelector('.status').innerHTML = "Email not sent.";
+                  document.querySelector('.status').style.color = 'red'
           }})
           .catch((error) => console.log(error.message))
   }

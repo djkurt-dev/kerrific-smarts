@@ -192,7 +192,7 @@ p,.ideas-tagline{
     padding: 30px 30px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
-    height: 270px;
+    min-height: 350px;
   }
 
 .service-card:before {
@@ -282,8 +282,8 @@ p,.ideas-tagline{
 
 .profile-card{
     background-color: #ffffff;
-    width: 390px;
-    height: 480px;
+    max-width: 390px;
+    min-height: 480px;
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -329,6 +329,9 @@ p,.ideas-tagline{
     color: #004C56;
 }
 
+.contact-btn{
+    float: left;
+}
 
 /* ================================         FOOTER STYLES        ================================ */
 .footer-cont{
@@ -352,7 +355,9 @@ p,.ideas-tagline{
 
 
 /* media queries */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+}
 
 @media (min-width: 768px) {}
 
