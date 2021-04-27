@@ -10,6 +10,7 @@ html {
 }
 
 body{
+    position: relative;
     background-image: url(../images/main-bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,24 +25,26 @@ body{
 
 .nav-logo{
     padding-inline-end: 15px;
+    width: 70px;
+    transition: .5s ease-in-out;
 }
 
 .kerrific{
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
     color: #F48319;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
+    transition: .5s ease-in-out;
 }
 
 .smarts{
-    font-size: 28px;
+    font-size: 33px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
     color: #004C56;
-
-    
+    transition: .5s ease-in-out;   
 }
 .nav-item{
     font-size: 15px;
@@ -49,17 +52,39 @@ body{
     font-family: 'Ubuntu', sans-serif;
     color: #004C56;     
     margin-inline-start: 25px;
+    transition: .5s;
 }
 
 .nav-item:hover{
     color: #F48319;
 }
 
-.navbar{
-    background-image: url(../images/tech-bg.jpg);
-    box-shadow: #f7f5f5;
+.bgcolor{
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    height: 50px;
+    /* transition: .3s ease-in; */
 }
 
+.navigation{
+    transition: .3s ease-in-out ;
+}
+
+.kerrific-small{
+    font-size: 30px !important;
+}
+
+.smarts-small{
+    font-size: 23px !important;
+}
+
+.nav-logo-small{
+    width: 50px !important;
+}
+
+.nav-item-small{
+    font-size: 13px;
+}
 /* container */
 .content{
     padding-top: 70px;
@@ -89,6 +114,9 @@ body{
     background-color:#FFFFFF;
 }
 
+.active{
+    color: #F48319;
+}
 /* ================================         HOME STYLES        ================================ */
 .home-content{
     margin-top: auto;

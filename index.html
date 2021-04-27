@@ -14,18 +14,18 @@
     <title>Kerrific Smarts</title>
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbarNavAltMarkup">
     <div class="main-cont">
-      <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <nav class="navbar navbar-expand-lg fixed-top navigation">
         <div class="container">
-          <img class="nav-logo" src="./images/logo-70px.png" alt="kerrific-logo" width="70px"> 
+          <img class="nav-logo" src="./images/logo-70px.png" alt="kerrific-logo"> 
           <a class="navbar-brand d-none d-sm-block " href="index.html"><span class="kerrific">Kerrific</span> <span class="smarts"> Smarts</span></a>
           <button class="navbar-toggler" style="border: 2px solid #004C56; border-radius: 5px;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#004C56; font-size:28px;"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link text-center" href="#home">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link text-center active" href="#home">HOME <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link text-center" href="#about">ABOUT</a>
               <a class="nav-item nav-link text-center" href="#services">SERVICES</a>
               <a class="nav-item nav-link text-center" href="#team">TEAM</a>
@@ -35,8 +35,8 @@
         </div>
       </nav>
       <!-- SECTION : HOME -->
-        <section id="home">
-          <div class="container content align-middle pb-5 home-container">
+        <section>
+          <div id="home" class="container content align-middle pb-5 home-container">
             <h1 class="we-create">We create <br> smart solutions. </h1>
             <hr align="left">
             <p><span class="ideas-tagline">Kerrific Smarts</span> turns your ideas into reality at an affordable price.</p>
@@ -44,8 +44,8 @@
         </section>
 
       <!-- SECTION : ABOUT -->
-        <section id="about">
-          <div class="content">
+        <section >
+          <div id="about" class="content">
             <div class="gray-container">
               <div class="container d-flex justify-content-center  ">
                 <div class="row">
@@ -70,8 +70,8 @@
         </section>
       
       <!-- SECTION : SERVICES -->
-        <section id="services">
-          <div class="content white-container">
+        <section>
+          <div id="services" class="content white-container">
             <div class="container">
               <div class="pb-4">
                 <h1 class="section-title mt-3"> What We Do</h1>
@@ -99,7 +99,7 @@
                   <div class="service-card">
                     <i class="fa fa-pencil-ruler mx-auto"></i>
                     <h4 class="service-title text-center">Educational</h4>
-                    <p class="service-description">We help students in their academics such as Computer Programming projects/assignments, creating powerpoint (PPT) presentations, and research paper.</p>
+                    <p class="service-description">We help students in their academics such as Computer Programming projects/assignments, creating powerpoint (PPT) presentations, and research paper works.</p>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -116,8 +116,8 @@
         </section>
 
       <!-- SECTION : TEAM -->
-        <section id="team">
-          <div class="">
+        <section>
+          <div id="team" class="">
             <div class="team-container">
               <div class="pb-4 pt-4">
                 <h1 class="team-title">Meet Our Team</h1>
@@ -132,7 +132,7 @@
                       </div>
                       <h1 class="profile-name text-center">Kyle Timajo</h1>
                       <p class="profile-position text-center">3rd-year Information Technology Student</p>
-                      <p class="profile-description text-center">A student developer who loves Python, Java, C#, C++, Javascript, PHP and Mobile App Development.</p>
+                      <p class="profile-description text-center">Student developer who loves Python, Java, C#, C++, Javascript, PHP and Mobile App Development.</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
@@ -152,8 +152,8 @@
         </section>
 
       <!-- SECTION : CONTACT -->
-        <section id="contact">
-          <div class="content white-container">
+        <section>
+          <div id="contact" class="content white-container">
             <div class="container">
               <div class="pb-4 mb-2">
                 <h1 class="section-title mt-3">Contact Us</h1>
@@ -238,8 +238,9 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
    
   </body>
 </html>
