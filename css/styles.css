@@ -62,7 +62,7 @@ body{
 .bgcolor{
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    height: 50px;
+    height: 55px;
     /* transition: .3s ease-in; */
 }
 
@@ -79,11 +79,11 @@ body{
 }
 
 .nav-logo-small{
-    width: 50px !important;
+    width: 60px !important;
 }
 
 .nav-item-small{
-    font-size: 13px;
+    font-size: 14px;
 }
 /* container */
 .content{
