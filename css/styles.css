@@ -166,6 +166,17 @@ p,.ideas-tagline{
     padding-top: 50px;
     text-align: center;
 }
+.about-section{
+    min-height: 450px;
+}
+.about-image{
+    height: 400px;
+    background: url('../images/stil-flRm0z3MEoA-unsplash.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center center;
+}
 
 
 
@@ -338,3 +349,17 @@ p,.ideas-tagline{
 .icons{
     color: #ffffff;
 }
+
+
+/* media queries */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .about-image{
+        height: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {}
