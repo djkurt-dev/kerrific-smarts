@@ -62,7 +62,7 @@ body{
 .bgcolor{
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    height: 55px;
+    min-height: 55px;
 }
 
 .navigation{
@@ -453,7 +453,7 @@ p,.ideas-tagline{
 
 @media (max-width: 991px) {
     .collapse, nav {
-        background-color: #FFFFFF;
+        /* background-color: #FFFFFF; */
         box-shadow: none !important;
         width: 100%;
     }
