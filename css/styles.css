@@ -452,8 +452,8 @@ p,.ideas-tagline{
 }
 
 @media (max-width: 991px) {
-    .collapse, nav {
-        /* background-color: #FFFFFF; */
+    nav {
+        background-color: #FFFFFF;
         box-shadow: none !important;
         width: 100%;
     }
