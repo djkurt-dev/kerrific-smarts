@@ -170,6 +170,7 @@ p,.ideas-tagline{
 }
 .about-image{
     height: 400px;
+    border-radius: 15px;
     background: url('../images/stil-flRm0z3MEoA-unsplash.jpg');
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
