@@ -362,7 +362,7 @@ p,.ideas-tagline{
   /* Scale up the box */
 .profile-card:hover {
     cursor: pointer;
-    transform: scale(1.08, 1.08);
+    transform: scale(1.05, 1.05);
   }
   
   /* Fade in the pseudo-element with the bigger shadow */
