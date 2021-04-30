@@ -1,5 +1,5 @@
 // scrollspy
-$('body').scrollspy({ target: '#navbarNavAltMarkup', offset: 10 });
+$('body').scrollspy({ target: '#navbarNavAltMarkup', offset: 30 });
 
 $(window).on('scroll', function(){
     if($(window).scrollTop()){
