@@ -442,9 +442,17 @@ p,.ideas-tagline{
 /* ================================         WORKS STYLES        ================================ */
 .works-img{
     min-width: 100%;
+    transition: box-shadow .3s;
 }
 
-
+.works-img:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.works-hr{
+    width: 180px;
+    border: 5px solid #004C56;
+    margin-top: -5px;
+}
 
 /* media queries */
 @media (min-width: 200px) {
