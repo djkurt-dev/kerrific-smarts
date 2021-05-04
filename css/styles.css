@@ -438,6 +438,18 @@ p,.ideas-tagline{
 }
 
 
+
+/* ================================         WORKS STYLES        ================================ */
+.works-img{
+    min-width: 100%;
+}
+.single-img{
+}
+/* .gallery-row{
+    padding: auto;
+} */
+
+
 /* media queries */
 @media (min-width: 200px) {
     .we-create{
@@ -470,6 +482,10 @@ p,.ideas-tagline{
 @media (min-width: 992px) {
     .about-image{
         height: 100% !important;
+    }
+    .single-img{
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
