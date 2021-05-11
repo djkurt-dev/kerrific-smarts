@@ -454,6 +454,108 @@ p,.ideas-tagline{
     margin-top: -5px;
 }
 
+.work-description{
+    margin: 70px auto;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+}
+
+.work-description h3{
+    font-size: 25px;
+}
+.work-description p{
+    font-size: 18px;
+}
+
+/* Card Styles */
+.card{
+    /* position: relative; */
+    height: 470px;
+    max-width: 100%;
+    /* display: block; */
+    /* background: white; */
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+    transition: 0.4s linear;
+}
+
+.card:hover{
+    box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+
+}
+
+.card .image{
+    background: black;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.card.active .image img{
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+.card .content{
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.content .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #004C56;
+}
+
+.content .subtitle{
+    font-size: 18px;
+    font-weight: 500;
+    color: #F48319;
+    margin-bottom: 10px;
+}
+
+.bottom p{
+    color: #004C56;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.bottom button{
+    float: left;
+    padding: 7px 15px;
+    font-size: 17px;
+    background: #004C56;
+    color: white;
+    font-weight: 500;
+    border: none;
+    margin:  10px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.bottom button:hover{
+    transform: scale(0.9);
+    background: #F48319;
+    color: #004C56;
+}
+
+.bottom button a{
+    text-decoration: none;
+    color: white;
+}
+
+.bottom{
+    display: none;
+}
+
 /* media queries */
 @media (min-width: 200px) {
     .we-create{
@@ -481,6 +583,11 @@ p,.ideas-tagline{
     .nav-item{
         margin: 1px auto !important;
     }
+
+    .card{
+        width: 370px;
+        margin: 0 auto !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -494,3 +601,5 @@ p,.ideas-tagline{
 }
 
 @media (min-width: 1200px) {}
+
+
