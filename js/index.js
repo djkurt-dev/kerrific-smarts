@@ -23,6 +23,9 @@ $(window).on('scroll', function(){
 $('.navbar-collapse').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+$(document).on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 // Hamburger
 $('#wrapper').click(function(){
