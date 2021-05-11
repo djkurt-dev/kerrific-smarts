@@ -32,7 +32,3 @@ $('.card').hover(function(){
 });
 
 // GALLERY LIGHTBOX EFFECT
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
