@@ -20,15 +20,15 @@ $(window).on('scroll', function(){
 });
 
 // WORK CARD HOVER 
-$('.card').hover(function(){
-    if($(this).hasClass('active')){
-        $('.card .bottom').slideUp(function(){
-            $('.card').removeClass('active');
-        });
-    } else {
-        $('.card').addClass('active');
-        $('.card .bottom').stop().slideDown();
-    }
-});
+// $('.card').hover(function(){
+//     if($(this).hasClass('active')){
+//         $('.card .bottom').slideUp(function(){
+//             $('.card').removeClass('active');
+//         });
+//     } else {
+//         $('.card').addClass('active');
+//         $('.card .bottom').stop().slideDown();
+//     }
+// });
 
 // GALLERY LIGHTBOX EFFECT
