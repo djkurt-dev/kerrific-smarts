@@ -31,3 +31,9 @@ $(document).on('click', function(){
 $('#wrapper').click(function(){
     $('.icon').toggleClass('close');
 });
+
+//Lightbox
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
