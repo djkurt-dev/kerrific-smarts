@@ -27,11 +27,6 @@ $(document).on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-// Hamburger
-$('#wrapper').click(function(){
-    $('.icon').toggleClass('close');
-});
-
 //Lightbox
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
