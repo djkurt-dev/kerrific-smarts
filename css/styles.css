@@ -515,6 +515,28 @@ p,.ideas-tagline{
     overflow: hidden;
 }
 
+/* Dev Styles */
+.card .dev{
+    padding: auto;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card:hover .dev img{
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.dev img{
+    height: 300px;
+    width: 500px;
+    transition: 0.3s;
+}
+/* End of Dev styles */
+
+/* Checkapp styles */
 .card .checkapp{
     height: 100%;
     width: 100%;
@@ -530,6 +552,8 @@ p,.ideas-tagline{
 .checkapp img{
     transition: 0.3s;
 }
+
+/* End of CHeckapp styles */
 
 .image img{
     height: 100%;
